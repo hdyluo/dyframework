@@ -1,0 +1,50 @@
+####1. 命名规范
+
+专有名词命名规范：
+。。。
+
+
+
+1.类命名 
+	`前缀` :  `YG`
+	`后缀`:
+		`ViewController` : `VC`     ---- YGHomeVC
+		`View` : `View`				---- YGHomeView
+		`cell` : `Cell`				---- YGHomeCell
+		`model` : `Model`			---- YGHomeModel
+2.属性和成员变量命名
+	`后缀`:
+		`button` :  `Btn`			---- sureBtn
+		`View` : `View`				---- bannerView
+		`imageView` : `ImgView`    
+		`image` : `img`
+
+3. controller的结构：按照这种顺序和分层来指定
+
+#prgram mark - system circle    				1
+-init{
+}
+-(void)viewDidLoad{
+}
+-(void)viewWillAppear{
+}
+-delloc{
+}
+#prgram mark - delegate							2
+
+#prgram mark - target action					3
+
+#prgram mark - private method   				4
+私有方法：在前面加下划线
+	-void _aPrivateMethod()
+
+#prgram mark - setter							5
+
+#prgram mark - 初始化(getter,懒加载)				6
+
+
+4. 宏定义   UIKIT_EXTERN  （系统样式）
+
+YG_COLOLR_BROWN
+YG_SCREEN_WIDTH
+YG_SCREEN_HEIGHT
