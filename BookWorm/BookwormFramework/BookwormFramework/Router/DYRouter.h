@@ -6,17 +6,14 @@
 //  Copyright © 2017年 黄德玉. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@class DYRouterCondition;
-typedef id (^routerCallback)(NSDictionary *);
 @interface DYRouter : NSObject
-+(instancetype)sharedInstance;
 
--(void)routerWithCondition:(DYRouterCondition *) condition;
++ (instancetype)sharedInstance;
 
--(void)routerWithCondition:(DYRouterCondition *)condition callback:(routerCallback) callback;
+- (void)openPageWithOrgin:(UIViewController *)orginVC destination:(NSString *)urlString;
 
--(void)invokeWithCondition:(DYRouterCondition *)condition callback:(routerCallback) callback;
+- (void)openPageViewOrgin:(UIViewController *)orginVC parmaters:(id)pars routerCallback:(void (^)(id object)) callback;
 
 @end

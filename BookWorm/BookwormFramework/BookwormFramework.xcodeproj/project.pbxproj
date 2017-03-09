@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		B014724A1E56947800886A84 /* DYRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = B01472481E56947800886A84 /* DYRouter.h */; };
 		B014724B1E56947800886A84 /* DYRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = B01472491E56947800886A84 /* DYRouter.m */; };
-		B014724E1E56965A00886A84 /* DYRouterCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = B014724C1E56965A00886A84 /* DYRouterCondition.h */; };
-		B014724F1E56965A00886A84 /* DYRouterCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = B014724D1E56965A00886A84 /* DYRouterCondition.m */; };
 		B01472521E56BD9300886A84 /* UIViewController+Router.h in Headers */ = {isa = PBXBuildFile; fileRef = B01472501E56BD9300886A84 /* UIViewController+Router.h */; };
 		B01472531E56BD9300886A84 /* UIViewController+Router.m in Sources */ = {isa = PBXBuildFile; fileRef = B01472511E56BD9300886A84 /* UIViewController+Router.m */; };
 		B02739091E6E98AF00D572BD /* DYCacheManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B02739071E6E98AF00D572BD /* DYCacheManager.h */; };
@@ -48,8 +46,6 @@
 		A79BF8D8185185C5EE6FEA3D /* Pods-BookwormFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookwormFramework.release.xcconfig"; path = "../Pods/Target Support Files/Pods-BookwormFramework/Pods-BookwormFramework.release.xcconfig"; sourceTree = "<group>"; };
 		B01472481E56947800886A84 /* DYRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYRouter.h; sourceTree = "<group>"; };
 		B01472491E56947800886A84 /* DYRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYRouter.m; sourceTree = "<group>"; };
-		B014724C1E56965A00886A84 /* DYRouterCondition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYRouterCondition.h; sourceTree = "<group>"; };
-		B014724D1E56965A00886A84 /* DYRouterCondition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYRouterCondition.m; sourceTree = "<group>"; };
 		B01472501E56BD9300886A84 /* UIViewController+Router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Router.h"; sourceTree = "<group>"; };
 		B01472511E56BD9300886A84 /* UIViewController+Router.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Router.m"; sourceTree = "<group>"; };
 		B02739071E6E98AF00D572BD /* DYCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYCacheManager.h; sourceTree = "<group>"; };
@@ -220,8 +216,6 @@
 			children = (
 				B01472481E56947800886A84 /* DYRouter.h */,
 				B01472491E56947800886A84 /* DYRouter.m */,
-				B014724C1E56965A00886A84 /* DYRouterCondition.h */,
-				B014724D1E56965A00886A84 /* DYRouterCondition.m */,
 				B01472501E56BD9300886A84 /* UIViewController+Router.h */,
 				B01472511E56BD9300886A84 /* UIViewController+Router.m */,
 			);
@@ -296,7 +290,6 @@
 				B0CCA4071E6D36B000150E7D /* DYBaseDialog.h in Headers */,
 				B02739091E6E98AF00D572BD /* DYCacheManager.h in Headers */,
 				B047E34B1E6CF839003C9A09 /* DYHTTPError.h in Headers */,
-				B014724E1E56965A00886A84 /* DYRouterCondition.h in Headers */,
 				B014724A1E56947800886A84 /* DYRouter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,7 +406,6 @@
 				B047E3581E6CF8A2003C9A09 /* DYBackgroundTask.m in Sources */,
 				B027390A1E6E98AF00D572BD /* DYCacheManager.m in Sources */,
 				B047E3541E6CF87C003C9A09 /* DYSocketManager.m in Sources */,
-				B014724F1E56965A00886A84 /* DYRouterCondition.m in Sources */,
 				B0CCA4041E6D322300150E7D /* DYBaseAlert.m in Sources */,
 				B047E33C1E6CF7D8003C9A09 /* DYHTTPManager.m in Sources */,
 				B0E90A961E558CB7003BD157 /* YGBaseVC.m in Sources */,

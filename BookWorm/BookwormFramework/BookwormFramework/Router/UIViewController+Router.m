@@ -12,19 +12,21 @@
 @implementation UIViewController (Router)
 
 static char * extraParKey;
--(void)setExtraParameters:(NSDictionary *)extraParameters{
+-(void)setLaunchData:(NSDictionary *)extraParameters{
     objc_setAssociatedObject(self, &extraParKey, extraParameters, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
--(NSDictionary *)extraParameters{
+-(NSDictionary *)launchData{
    return objc_getAssociatedObject(self, extraParKey);
 }
 
 static char * blockKey;
--(void)setCallback:(id (^)(NSDictionary *))callback{
+-(void)setRouterBlock:(id (^)(NSDictionary *))callback{
     objc_setAssociatedObject(self, &blockKey, callback, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
--(id (^)(NSDictionary *))callback{
+-(id (^)(NSDictionary *))routerBlock{
     return objc_getAssociatedObject(self, blockKey);
 }
+
+
 
 @end
