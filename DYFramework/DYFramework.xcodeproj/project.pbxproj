@@ -153,7 +153,6 @@
 		B02D009A1EE922B000E040F4 /* UIImageView+JKLetters.m in Sources */ = {isa = PBXBuildFile; fileRef = B02DFF771EE922AF00E040F4 /* UIImageView+JKLetters.m */; };
 		B02D009B1EE922B000E040F4 /* UIImageView+JKReflect.m in Sources */ = {isa = PBXBuildFile; fileRef = B02DFF791EE922AF00E040F4 /* UIImageView+JKReflect.m */; };
 		B02D009C1EE922B000E040F4 /* UILabel+JKAdjustableLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B02DFF7C1EE922AF00E040F4 /* UILabel+JKAdjustableLabel.m */; };
-		B02D009D1EE922B000E040F4 /* UILabel+JKAutomaticWriting.m in Sources */ = {isa = PBXBuildFile; fileRef = B02DFF7E1EE922AF00E040F4 /* UILabel+JKAutomaticWriting.m */; };
 		B02D009E1EE922B000E040F4 /* UILabel+JKAutoSize.m in Sources */ = {isa = PBXBuildFile; fileRef = B02DFF801EE922AF00E040F4 /* UILabel+JKAutoSize.m */; };
 		B02D009F1EE922B000E040F4 /* UILabel+JKSuggestSize.m in Sources */ = {isa = PBXBuildFile; fileRef = B02DFF821EE922AF00E040F4 /* UILabel+JKSuggestSize.m */; };
 		B02D00A01EE922B000E040F4 /* UINavigationBar+JKAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = B02DFF851EE922AF00E040F4 /* UINavigationBar+JKAwesome.m */; };
@@ -675,8 +674,6 @@
 		B02DFF791EE922AF00E040F4 /* UIImageView+JKReflect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+JKReflect.m"; sourceTree = "<group>"; };
 		B02DFF7B1EE922AF00E040F4 /* UILabel+JKAdjustableLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+JKAdjustableLabel.h"; sourceTree = "<group>"; };
 		B02DFF7C1EE922AF00E040F4 /* UILabel+JKAdjustableLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+JKAdjustableLabel.m"; sourceTree = "<group>"; };
-		B02DFF7D1EE922AF00E040F4 /* UILabel+JKAutomaticWriting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+JKAutomaticWriting.h"; sourceTree = "<group>"; };
-		B02DFF7E1EE922AF00E040F4 /* UILabel+JKAutomaticWriting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+JKAutomaticWriting.m"; sourceTree = "<group>"; };
 		B02DFF7F1EE922AF00E040F4 /* UILabel+JKAutoSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+JKAutoSize.h"; sourceTree = "<group>"; };
 		B02DFF801EE922AF00E040F4 /* UILabel+JKAutoSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+JKAutoSize.m"; sourceTree = "<group>"; };
 		B02DFF811EE922AF00E040F4 /* UILabel+JKSuggestSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+JKSuggestSize.h"; sourceTree = "<group>"; };
@@ -1704,8 +1701,6 @@
 			children = (
 				B02DFF7B1EE922AF00E040F4 /* UILabel+JKAdjustableLabel.h */,
 				B02DFF7C1EE922AF00E040F4 /* UILabel+JKAdjustableLabel.m */,
-				B02DFF7D1EE922AF00E040F4 /* UILabel+JKAutomaticWriting.h */,
-				B02DFF7E1EE922AF00E040F4 /* UILabel+JKAutomaticWriting.m */,
 				B02DFF7F1EE922AF00E040F4 /* UILabel+JKAutoSize.h */,
 				B02DFF801EE922AF00E040F4 /* UILabel+JKAutoSize.m */,
 				B02DFF811EE922AF00E040F4 /* UILabel+JKSuggestSize.h */,
@@ -2127,7 +2122,6 @@
 				B02D00EB1EE934BC00E040F4 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				B02D000E1EE922AF00E040F4 /* NSBundle+JKAppIcon.m in Sources */,
 				B02DFDF41EE91FFA00E040F4 /* AFURLRequestSerialization.m in Sources */,
-				B02D009D1EE922B000E040F4 /* UILabel+JKAutomaticWriting.m in Sources */,
 				B02D008A1EE922B000E040F4 /* UIImage+JKCapture.m in Sources */,
 				B02D00CF1EE922B000E040F4 /* UIWebView+JKCanvas.m in Sources */,
 				B02D00101EE922AF00E040F4 /* NSData+JKBase64.m in Sources */,
