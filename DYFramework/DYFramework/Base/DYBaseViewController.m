@@ -50,4 +50,12 @@
     [self showBackArrow];
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    if (self.fd_willAppearInjectBlock) {
+        self.fd_willAppearInjectBlock(self, animated);
+    }
+
+}
+
 @end

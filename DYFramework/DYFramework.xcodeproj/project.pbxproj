@@ -221,6 +221,13 @@
 		B02D00E11EE924C000E040F4 /* DYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B02D00E01EE924C000E040F4 /* DYBaseViewController.m */; };
 		B02D00E41EE9251B00E040F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B02D00E31EE9251B00E040F4 /* UIKit.framework */; };
 		B02D00E61EE9252100E040F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B02D00E51EE9252100E040F4 /* Foundation.framework */; };
+		B02D00EB1EE934BC00E040F4 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = B02D00EA1EE934BC00E040F4 /* UINavigationController+FDFullscreenPopGesture.m */; };
+		B02D00EC1EE934FF00E040F4 /* UINavigationController+FDFullscreenPopGesture.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B02D00E91EE934BC00E040F4 /* UINavigationController+FDFullscreenPopGesture.h */; };
+		B02D00ED1EE934FF00E040F4 /* DYBaseViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B02D00DF1EE924C000E040F4 /* DYBaseViewController.h */; };
+		B02D00F11EE9360500E040F4 /* YGCodeScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = B02D00F01EE9360500E040F4 /* YGCodeScanner.m */; };
+		B02D00F51EE9367700E040F4 /* DYPhotoPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = B02D00F41EE9367700E040F4 /* DYPhotoPicker.m */; };
+		B02D00F61EE937B000E040F4 /* DYPhotoPicker.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B02D00F31EE9367700E040F4 /* DYPhotoPicker.h */; };
+		B02D00F71EE937B000E040F4 /* YGCodeScanner.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B02D00EF1EE9360500E040F4 /* YGCodeScanner.h */; };
 		B02DFD961EE91D5D00E040F4 /* DYRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = B02DFD8F1EE91D5D00E040F4 /* DYRouter.m */; };
 		B02DFD971EE91D5D00E040F4 /* DYRouterState.m in Sources */ = {isa = PBXBuildFile; fileRef = B02DFD911EE91D5D00E040F4 /* DYRouterState.m */; };
 		B02DFD981EE91D5D00E040F4 /* UITabBarController+DYRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = B02DFD931EE91D5D00E040F4 /* UITabBarController+DYRouter.m */; };
@@ -269,6 +276,10 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				B02D00F61EE937B000E040F4 /* DYPhotoPicker.h in CopyFiles */,
+				B02D00F71EE937B000E040F4 /* YGCodeScanner.h in CopyFiles */,
+				B02D00EC1EE934FF00E040F4 /* UINavigationController+FDFullscreenPopGesture.h in CopyFiles */,
+				B02D00ED1EE934FF00E040F4 /* DYBaseViewController.h in CopyFiles */,
 				B02D00D81EE922D800E040F4 /* JKCategories.h in CopyFiles */,
 				B02D00D91EE922D800E040F4 /* JKCoreLocation.h in CopyFiles */,
 				B02D00DA1EE922D800E040F4 /* JKFoundation.h in CopyFiles */,
@@ -302,6 +313,12 @@
 		B02D00E31EE9251B00E040F4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B02D00E51EE9252100E040F4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B02D00E71EE92E5E00E040F4 /* resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = resources.bundle; sourceTree = "<group>"; };
+		B02D00E91EE934BC00E040F4 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		B02D00EA1EE934BC00E040F4 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
+		B02D00EF1EE9360500E040F4 /* YGCodeScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGCodeScanner.h; sourceTree = "<group>"; };
+		B02D00F01EE9360500E040F4 /* YGCodeScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGCodeScanner.m; sourceTree = "<group>"; };
+		B02D00F31EE9367700E040F4 /* DYPhotoPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPhotoPicker.h; sourceTree = "<group>"; };
+		B02D00F41EE9367700E040F4 /* DYPhotoPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPhotoPicker.m; sourceTree = "<group>"; };
 		B02DFD811EE91D3500E040F4 /* libDYFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDYFramework.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B02DFD8E1EE91D5D00E040F4 /* DYRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYRouter.h; sourceTree = "<group>"; };
 		B02DFD8F1EE91D5D00E040F4 /* DYRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYRouter.m; sourceTree = "<group>"; };
@@ -800,6 +817,7 @@
 		B02D00DE1EE924AD00E040F4 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				B02D00E81EE934BC00E040F4 /* FDFullscreenPopGesture */,
 				B02D00DF1EE924C000E040F4 /* DYBaseViewController.h */,
 				B02D00E01EE924C000E040F4 /* DYBaseViewController.m */,
 			);
@@ -813,6 +831,33 @@
 				B02D00E31EE9251B00E040F4 /* UIKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B02D00E81EE934BC00E040F4 /* FDFullscreenPopGesture */ = {
+			isa = PBXGroup;
+			children = (
+				B02D00E91EE934BC00E040F4 /* UINavigationController+FDFullscreenPopGesture.h */,
+				B02D00EA1EE934BC00E040F4 /* UINavigationController+FDFullscreenPopGesture.m */,
+			);
+			path = FDFullscreenPopGesture;
+			sourceTree = "<group>";
+		};
+		B02D00EE1EE9360500E040F4 /* CodeScanner */ = {
+			isa = PBXGroup;
+			children = (
+				B02D00EF1EE9360500E040F4 /* YGCodeScanner.h */,
+				B02D00F01EE9360500E040F4 /* YGCodeScanner.m */,
+			);
+			path = CodeScanner;
+			sourceTree = "<group>";
+		};
+		B02D00F21EE9367700E040F4 /* PhotoPicker */ = {
+			isa = PBXGroup;
+			children = (
+				B02D00F31EE9367700E040F4 /* DYPhotoPicker.h */,
+				B02D00F41EE9367700E040F4 /* DYPhotoPicker.m */,
+			);
+			path = PhotoPicker;
 			sourceTree = "<group>";
 		};
 		B02DFD781EE91D3500E040F4 = {
@@ -835,6 +880,8 @@
 		B02DFD831EE91D3500E040F4 /* DYFramework */ = {
 			isa = PBXGroup;
 			children = (
+				B02D00F21EE9367700E040F4 /* PhotoPicker */,
+				B02D00EE1EE9360500E040F4 /* CodeScanner */,
 				B02D00DE1EE924AD00E040F4 /* Base */,
 				B02DFE0F1EE922AF00E040F4 /* JKCategories */,
 				B02DFE0A1EE9219100E040F4 /* Defines */,
@@ -2048,6 +2095,7 @@
 				B02D00111EE922AF00E040F4 /* NSData+JKDataCache.m in Sources */,
 				B02D003B1EE922AF00E040F4 /* NSObject+JKReflection.m in Sources */,
 				B02D00BA1EE922B000E040F4 /* UITextView+JKSelect.m in Sources */,
+				B02D00F51EE9367700E040F4 /* DYPhotoPicker.m in Sources */,
 				B02D00B81EE922B000E040F4 /* UITextView+JKPinchZoom.m in Sources */,
 				B02D00B11EE922B000E040F4 /* UITableViewCell+JKNIB.m in Sources */,
 				B02D00521EE922AF00E040F4 /* NSTimer+JKAddition.m in Sources */,
@@ -2067,6 +2115,7 @@
 				B02D003E1EE922AF00E040F4 /* NSSet+JKBlock.m in Sources */,
 				B02D005F1EE922AF00E040F4 /* CAAnimation+JKEasingEquations.m in Sources */,
 				B02D00661EE922AF00E040F4 /* UIApplication+JKKeyboardFrame.m in Sources */,
+				B02D00F11EE9360500E040F4 /* YGCodeScanner.m in Sources */,
 				B02D00A51EE922B000E040F4 /* UINavigationItem+JKLock.m in Sources */,
 				B02D002F1EE922AF00E040F4 /* NSNumber+JKCGFloat.m in Sources */,
 				B02D00BC1EE922B000E040F4 /* UIView+JKBlockGesture.m in Sources */,
@@ -2075,6 +2124,7 @@
 				B02D00B31EE922B000E040F4 /* UITextField+JKHistory.m in Sources */,
 				B02D00251EE922AF00E040F4 /* NSException+JKTrace.m in Sources */,
 				B02D00601EE922AF00E040F4 /* CALayer+JKBorderColor.m in Sources */,
+				B02D00EB1EE934BC00E040F4 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				B02D000E1EE922AF00E040F4 /* NSBundle+JKAppIcon.m in Sources */,
 				B02DFDF41EE91FFA00E040F4 /* AFURLRequestSerialization.m in Sources */,
 				B02D009D1EE922B000E040F4 /* UILabel+JKAutomaticWriting.m in Sources */,
