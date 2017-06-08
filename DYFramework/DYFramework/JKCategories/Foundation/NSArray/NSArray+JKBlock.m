@@ -9,17 +9,6 @@
 #import "NSArray+JKBlock.h"
 
 @implementation NSArray (JKBlock)
-- (void)jk_each:(void (^)(id object))block {
-    [self enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-        block(obj);
-    }];
-}
-
-- (void)jk_eachWithIndex:(void (^)(id object, NSUInteger index))block {
-    [self enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-        block(obj, idx);
-    }];
-}
 
 - (NSArray *)jk_map:(id (^)(id object))block {
     NSMutableArray *array = [NSMutableArray arrayWithCapacity:self.count];
@@ -51,16 +40,4 @@
     return nil;
 }
 
-- (id)jk_reduce:(id (^)(id accumulator, id object))block {
-    return [self jk_reduce:nil withBlock:block];
-}
-
-- (id)jk_reduce:(id)initial withBlock:(id (^)(id accumulator, id object))block {
-    id accumulator = initial;
-    
-    for(id object in self)
-        accumulator = accumulator ? block(accumulator, object) : object;
-    
-    return accumulator;
-}
 @end
