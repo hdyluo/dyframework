@@ -218,6 +218,9 @@
 		B02D00DB1EE922D800E040F4 /* JKMapKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B02DFEE31EE922AF00E040F4 /* JKMapKit.h */; };
 		B02D00DC1EE922D800E040F4 /* JKQuartzCore.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B02DFEE41EE922AF00E040F4 /* JKQuartzCore.h */; };
 		B02D00DD1EE922D800E040F4 /* JKUIKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B02DFEE51EE922AF00E040F4 /* JKUIKit.h */; };
+		B02D00E11EE924C000E040F4 /* DYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B02D00E01EE924C000E040F4 /* DYBaseViewController.m */; };
+		B02D00E41EE9251B00E040F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B02D00E31EE9251B00E040F4 /* UIKit.framework */; };
+		B02D00E61EE9252100E040F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B02D00E51EE9252100E040F4 /* Foundation.framework */; };
 		B02DFD961EE91D5D00E040F4 /* DYRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = B02DFD8F1EE91D5D00E040F4 /* DYRouter.m */; };
 		B02DFD971EE91D5D00E040F4 /* DYRouterState.m in Sources */ = {isa = PBXBuildFile; fileRef = B02DFD911EE91D5D00E040F4 /* DYRouterState.m */; };
 		B02DFD981EE91D5D00E040F4 /* UITabBarController+DYRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = B02DFD931EE91D5D00E040F4 /* UITabBarController+DYRouter.m */; };
@@ -294,6 +297,11 @@
 		B02D00001EE922AF00E040F4 /* UIWebView+JKWebStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+JKWebStorage.m"; sourceTree = "<group>"; };
 		B02D00021EE922AF00E040F4 /* UIWindow+JKHierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+JKHierarchy.h"; sourceTree = "<group>"; };
 		B02D00031EE922AF00E040F4 /* UIWindow+JKHierarchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+JKHierarchy.m"; sourceTree = "<group>"; };
+		B02D00DF1EE924C000E040F4 /* DYBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYBaseViewController.h; sourceTree = "<group>"; };
+		B02D00E01EE924C000E040F4 /* DYBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYBaseViewController.m; sourceTree = "<group>"; };
+		B02D00E31EE9251B00E040F4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B02D00E51EE9252100E040F4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B02D00E71EE92E5E00E040F4 /* resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = resources.bundle; sourceTree = "<group>"; };
 		B02DFD811EE91D3500E040F4 /* libDYFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDYFramework.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B02DFD8E1EE91D5D00E040F4 /* DYRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYRouter.h; sourceTree = "<group>"; };
 		B02DFD8F1EE91D5D00E040F4 /* DYRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYRouter.m; sourceTree = "<group>"; };
@@ -772,6 +780,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B02D00E61EE9252100E040F4 /* Foundation.framework in Frameworks */,
+				B02D00E41EE9251B00E040F4 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -787,11 +797,30 @@
 			path = UIWindow;
 			sourceTree = "<group>";
 		};
+		B02D00DE1EE924AD00E040F4 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B02D00DF1EE924C000E040F4 /* DYBaseViewController.h */,
+				B02D00E01EE924C000E040F4 /* DYBaseViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		B02D00E21EE9251B00E040F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B02D00E51EE9252100E040F4 /* Foundation.framework */,
+				B02D00E31EE9251B00E040F4 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B02DFD781EE91D3500E040F4 = {
 			isa = PBXGroup;
 			children = (
 				B02DFD831EE91D3500E040F4 /* DYFramework */,
 				B02DFD821EE91D3500E040F4 /* Products */,
+				B02D00E21EE9251B00E040F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -806,11 +835,13 @@
 		B02DFD831EE91D3500E040F4 /* DYFramework */ = {
 			isa = PBXGroup;
 			children = (
+				B02D00DE1EE924AD00E040F4 /* Base */,
 				B02DFE0F1EE922AF00E040F4 /* JKCategories */,
 				B02DFE0A1EE9219100E040F4 /* Defines */,
 				B02DFDCB1EE91FFA00E040F4 /* Network */,
 				B02DFDA51EE91D9600E040F4 /* transition */,
 				B02DFD8D1EE91D5D00E040F4 /* Router */,
+				B02D00E71EE92E5E00E040F4 /* resources.bundle */,
 			);
 			path = DYFramework;
 			sourceTree = "<group>";
@@ -1939,6 +1970,7 @@
 				B02D000B1EE922AF00E040F4 /* CLLocation+JKCH1903.m in Sources */,
 				B02D00C91EE922B000E040F4 /* UIViewController+JKBackButtonTouched.m in Sources */,
 				B02DFD991EE91D5D00E040F4 /* UIViewController+DYRouter.m in Sources */,
+				B02D00E11EE924C000E040F4 /* DYBaseViewController.m in Sources */,
 				B02DFDFF1EE91FFA00E040F4 /* UIRefreshControl+AFNetworking.m in Sources */,
 				B02DFDFC1EE91FFA00E040F4 /* UIButton+AFNetworking.m in Sources */,
 				B02D00B01EE922B000E040F4 /* UITableViewCell+JKDelaysContentTouches.m in Sources */,

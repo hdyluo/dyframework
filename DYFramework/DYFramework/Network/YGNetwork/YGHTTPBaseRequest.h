@@ -10,8 +10,7 @@
 
 typedef NS_ENUM(NSInteger,YGHTTPRequestType) {
     YGHTTPRequestPost = 0,
-    YGHTTPRequestGet,
-    YGHTTPRequestHead
+    YGHTTPRequestGet
 };
 
 typedef NSString * (^YGHTTPBodyEncodeBlock)(NSURLRequest *request, id parameters, NSError * *error);    //请求body的编码方式,默认AFN做了URL编码

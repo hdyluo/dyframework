@@ -12,7 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef void(^YGHttpCompletionCallback)(NSError * err,id object);
+typedef void(^YGHttpCompletionCallback)( NSError * _Nullable  err,_Nullable id object);
 
 @interface YGHTTPManager : NSObject
 

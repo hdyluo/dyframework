@@ -92,12 +92,6 @@ static dispatch_queue_t url_serial_queue() {
                                      failure:errorBlock
                     ];
             break;
-        case YGHTTPRequestHead:
-            //            return [self.sessionManager HEAD:request.baseUrlStr
-            //                                  parameters:request.parameters
-            //                                     success:successBlock
-            //                                     failure:errorBlock];
-            break;
         default:
             break;
     }
