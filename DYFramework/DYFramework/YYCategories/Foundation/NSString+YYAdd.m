@@ -11,7 +11,6 @@
 
 #import "NSString+YYAdd.h"
 #import "NSData+YYAdd.h"
-#import "NSNumber+YYAdd.h"
 #import "UIDevice+YYAdd.h"
 #import "YYCategoriesMacro.h"
 
@@ -385,9 +384,9 @@ YYSYNTH_DUMMY_CLASS(NSString_YYAdd)
     return [self rangeOfCharacterFromSet:set].location != NSNotFound;
 }
 
-- (NSNumber *)numberValue {
-    return [NSNumber numberWithString:self];
-}
+//- (NSNumber *)numberValue {
+//    return [NSNumber numberWithString:self];
+//}
 
 - (NSData *)dataValue {
     return [self dataUsingEncoding:NSUTF8StringEncoding];
