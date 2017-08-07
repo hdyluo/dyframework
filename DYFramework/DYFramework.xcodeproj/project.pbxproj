@@ -214,12 +214,12 @@
 		B00F23BE1F3834190014C91D /* NSDate+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = B00F23821F3834190014C91D /* NSDate+YYAdd.m */; };
 		B00F23C31F3834190014C91D /* NSObject+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = B00F238C1F3834190014C91D /* NSObject+YYAdd.m */; };
 		B00F23C61F3834190014C91D /* NSString+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = B00F23921F3834190014C91D /* NSString+YYAdd.m */; };
-		B00F23CB1F3834190014C91D /* UIApplication+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = B00F239E1F3834190014C91D /* UIApplication+YYAdd.m */; };
-		B00F23CE1F3834190014C91D /* UIColor+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = B00F23A41F3834190014C91D /* UIColor+YYAdd.m */; };
-		B00F23CF1F3834190014C91D /* UIControl+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = B00F23A61F3834190014C91D /* UIControl+YYAdd.m */; };
-		B00F23D01F3834190014C91D /* UIDevice+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = B00F23A81F3834190014C91D /* UIDevice+YYAdd.m */; };
-		B00F23D81F3834190014C91D /* UIView+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = B00F23B81F3834190014C91D /* UIView+YYAdd.m */; };
 		B00F23DF1F3838EC0014C91D /* DYUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = B00F23DE1F3838EC0014C91D /* DYUtilities.m */; };
+		B00F23E51F38528E0014C91D /* UIView+DYFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = B00F23E41F38528E0014C91D /* UIView+DYFrame.m */; };
+		B00F23E81F3854580014C91D /* UIView+DYUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B00F23E71F3854580014C91D /* UIView+DYUtils.m */; };
+		B00F23EB1F3855420014C91D /* UIApplication+DYUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B00F23EA1F3855420014C91D /* UIApplication+DYUtils.m */; };
+		B00F23EE1F3857370014C91D /* UIDevice+DYUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B00F23ED1F3857370014C91D /* UIDevice+DYUtils.m */; };
+		B00F23F11F3859AA0014C91D /* NSData+DYUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B00F23F01F3859AA0014C91D /* NSData+DYUtils.m */; };
 		B02D00E11EE924C000E040F4 /* DYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B02D00E01EE924C000E040F4 /* DYBaseViewController.m */; };
 		B02D00E41EE9251B00E040F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B02D00E31EE9251B00E040F4 /* UIKit.framework */; };
 		B02D00E61EE9252100E040F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B02D00E51EE9252100E040F4 /* Foundation.framework */; };
@@ -683,19 +683,19 @@
 		B00F238C1F3834190014C91D /* NSObject+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYAdd.m"; sourceTree = "<group>"; };
 		B00F23911F3834190014C91D /* NSString+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+YYAdd.h"; sourceTree = "<group>"; };
 		B00F23921F3834190014C91D /* NSString+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YYAdd.m"; sourceTree = "<group>"; };
-		B00F239D1F3834190014C91D /* UIApplication+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+YYAdd.h"; sourceTree = "<group>"; };
-		B00F239E1F3834190014C91D /* UIApplication+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+YYAdd.m"; sourceTree = "<group>"; };
-		B00F23A31F3834190014C91D /* UIColor+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+YYAdd.h"; sourceTree = "<group>"; };
-		B00F23A41F3834190014C91D /* UIColor+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+YYAdd.m"; sourceTree = "<group>"; };
-		B00F23A51F3834190014C91D /* UIControl+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+YYAdd.h"; sourceTree = "<group>"; };
-		B00F23A61F3834190014C91D /* UIControl+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+YYAdd.m"; sourceTree = "<group>"; };
-		B00F23A71F3834190014C91D /* UIDevice+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+YYAdd.h"; sourceTree = "<group>"; };
-		B00F23A81F3834190014C91D /* UIDevice+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+YYAdd.m"; sourceTree = "<group>"; };
-		B00F23B71F3834190014C91D /* UIView+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YYAdd.h"; sourceTree = "<group>"; };
-		B00F23B81F3834190014C91D /* UIView+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YYAdd.m"; sourceTree = "<group>"; };
 		B00F23DD1F3838EC0014C91D /* DYUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYUtilities.h; sourceTree = "<group>"; };
 		B00F23DE1F3838EC0014C91D /* DYUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYUtilities.m; sourceTree = "<group>"; };
 		B00F23E01F38516C0014C91D /* YYCategoriesMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYCategoriesMacro.h; sourceTree = "<group>"; };
+		B00F23E31F38528E0014C91D /* UIView+DYFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DYFrame.h"; sourceTree = "<group>"; };
+		B00F23E41F38528E0014C91D /* UIView+DYFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DYFrame.m"; sourceTree = "<group>"; };
+		B00F23E61F3854580014C91D /* UIView+DYUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DYUtils.h"; sourceTree = "<group>"; };
+		B00F23E71F3854580014C91D /* UIView+DYUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DYUtils.m"; sourceTree = "<group>"; };
+		B00F23E91F3855420014C91D /* UIApplication+DYUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+DYUtils.h"; sourceTree = "<group>"; };
+		B00F23EA1F3855420014C91D /* UIApplication+DYUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+DYUtils.m"; sourceTree = "<group>"; };
+		B00F23EC1F3857370014C91D /* UIDevice+DYUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+DYUtils.h"; sourceTree = "<group>"; };
+		B00F23ED1F3857370014C91D /* UIDevice+DYUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+DYUtils.m"; sourceTree = "<group>"; };
+		B00F23EF1F3859AA0014C91D /* NSData+DYUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+DYUtils.h"; sourceTree = "<group>"; };
+		B00F23F01F3859AA0014C91D /* NSData+DYUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+DYUtils.m"; sourceTree = "<group>"; };
 		B02D00DF1EE924C000E040F4 /* DYBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYBaseViewController.h; sourceTree = "<group>"; };
 		B02D00E01EE924C000E040F4 /* DYBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYBaseViewController.m; sourceTree = "<group>"; };
 		B02D00E31EE9251B00E040F4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -1676,6 +1676,8 @@
 		B00F23781F3832D30014C91D /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				B00F23E21F38526C0014C91D /* Foundation */,
+				B00F23E11F3852600014C91D /* UIKit */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -1685,7 +1687,6 @@
 			children = (
 				B00F23E01F38516C0014C91D /* YYCategoriesMacro.h */,
 				B00F237A1F3834190014C91D /* Foundation */,
-				B00F239C1F3834190014C91D /* UIKit */,
 			);
 			path = YYCategories;
 			sourceTree = "<group>";
@@ -1705,21 +1706,28 @@
 			path = Foundation;
 			sourceTree = "<group>";
 		};
-		B00F239C1F3834190014C91D /* UIKit */ = {
+		B00F23E11F3852600014C91D /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				B00F239D1F3834190014C91D /* UIApplication+YYAdd.h */,
-				B00F239E1F3834190014C91D /* UIApplication+YYAdd.m */,
-				B00F23A31F3834190014C91D /* UIColor+YYAdd.h */,
-				B00F23A41F3834190014C91D /* UIColor+YYAdd.m */,
-				B00F23A51F3834190014C91D /* UIControl+YYAdd.h */,
-				B00F23A61F3834190014C91D /* UIControl+YYAdd.m */,
-				B00F23A71F3834190014C91D /* UIDevice+YYAdd.h */,
-				B00F23A81F3834190014C91D /* UIDevice+YYAdd.m */,
-				B00F23B71F3834190014C91D /* UIView+YYAdd.h */,
-				B00F23B81F3834190014C91D /* UIView+YYAdd.m */,
+				B00F23E31F38528E0014C91D /* UIView+DYFrame.h */,
+				B00F23E41F38528E0014C91D /* UIView+DYFrame.m */,
+				B00F23E61F3854580014C91D /* UIView+DYUtils.h */,
+				B00F23E71F3854580014C91D /* UIView+DYUtils.m */,
+				B00F23E91F3855420014C91D /* UIApplication+DYUtils.h */,
+				B00F23EA1F3855420014C91D /* UIApplication+DYUtils.m */,
+				B00F23EC1F3857370014C91D /* UIDevice+DYUtils.h */,
+				B00F23ED1F3857370014C91D /* UIDevice+DYUtils.m */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		B00F23E21F38526C0014C91D /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				B00F23EF1F3859AA0014C91D /* NSData+DYUtils.h */,
+				B00F23F01F3859AA0014C91D /* NSData+DYUtils.m */,
+			);
+			path = Foundation;
 			sourceTree = "<group>";
 		};
 		B02D00DE1EE924AD00E040F4 /* Base */ = {
@@ -1997,6 +2005,7 @@
 				B00F236C1F3832340014C91D /* UIViewController+JKStoreKit.m in Sources */,
 				B00F23521F3832340014C91D /* UITextField+JKBlocks.m in Sources */,
 				B00F23121F3832340014C91D /* UIButton+JKBlock.m in Sources */,
+				B00F23F11F3859AA0014C91D /* NSData+DYUtils.m in Sources */,
 				B00F23241F3832340014C91D /* UIFont+JKDynamicFontControl.m in Sources */,
 				B00F22EC1F3832340014C91D /* NSString+JKSize.m in Sources */,
 				B00F22DA1F3832340014C91D /* NSObject+JKKVOBlocks.m in Sources */,
@@ -2016,6 +2025,7 @@
 				B00F22BC1F3832340014C91D /* NSDate+JKUtilities.m in Sources */,
 				B00F22D11F3832340014C91D /* NSNumber+JKRound.m in Sources */,
 				B00F22E11F3832340014C91D /* NSString+JKDictionaryValue.m in Sources */,
+				B00F23E51F38528E0014C91D /* UIView+DYFrame.m in Sources */,
 				B02DFDFB1EE91FFA00E040F4 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				B00F23211F3832340014C91D /* UIDevice+JKHardware.m in Sources */,
 				B00F22C81F3832340014C91D /* NSHTTPCookieStorage+JKFreezeDry.m in Sources */,
@@ -2051,7 +2061,6 @@
 				B00F22C01F3832340014C91D /* NSDictionary+JKJSONString.m in Sources */,
 				B00F23701F3832340014C91D /* UIWebView+JKJavaScript.m in Sources */,
 				B00F23031F3832340014C91D /* CATransaction+JKAnimateWithDuration.m in Sources */,
-				B00F23D81F3834190014C91D /* UIView+YYAdd.m in Sources */,
 				B00F23BE1F3834190014C91D /* NSDate+YYAdd.m in Sources */,
 				B00F23451F3832340014C91D /* UINavigationItem+JKLock.m in Sources */,
 				B00F22E21F3832340014C91D /* NSString+JKEmoji.m in Sources */,
@@ -2060,22 +2069,20 @@
 				B00F22B91F3832340014C91D /* NSDate+JKFormatter.m in Sources */,
 				B02DFDF31EE91FFA00E040F4 /* AFSecurityPolicy.m in Sources */,
 				B00F22F21F3832340014C91D /* NSTimer+JKAddition.m in Sources */,
-				B00F23D01F3834190014C91D /* UIDevice+YYAdd.m in Sources */,
 				B00F22B81F3832340014C91D /* NSDate+JKExtension.m in Sources */,
 				B00F22E31F3832340014C91D /* NSString+JKEncrypt.m in Sources */,
-				B00F23CF1F3834190014C91D /* UIControl+YYAdd.m in Sources */,
 				B00F23C61F3834190014C91D /* NSString+YYAdd.m in Sources */,
 				B02D00F11EE9360500E040F4 /* YGCodeScanner.m in Sources */,
 				B00F22FF1F3832340014C91D /* CAAnimation+JKEasingEquations.m in Sources */,
 				B00F23201F3832340014C91D /* UIControl+JKSound.m in Sources */,
 				B00F232A1F3832340014C91D /* UIImage+JKCapture.m in Sources */,
-				B00F23CE1F3834190014C91D /* UIColor+YYAdd.m in Sources */,
 				B00F23331F3832340014C91D /* UIImage+JKRoundedCorner.m in Sources */,
 				B02D00EB1EE934BC00E040F4 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				B00F23391F3832340014C91D /* UIImageView+JKGeometryConversion.m in Sources */,
 				B00F22C61F3832340014C91D /* NSFileHandle+JKReadLine.m in Sources */,
 				B00F22F51F3832340014C91D /* NSURL+JKQueryDictionary.m in Sources */,
 				B00F22D01F3832340014C91D /* NSNumber+JKRomanNumerals.m in Sources */,
+				B00F23EE1F3857370014C91D /* UIDevice+DYUtils.m in Sources */,
 				B00F23641F3832340014C91D /* UIView+JKScreenshot.m in Sources */,
 				B00F22AE1F3832340014C91D /* NSBundle+JKAppIcon.m in Sources */,
 				B02DFDF41EE91FFA00E040F4 /* AFURLRequestSerialization.m in Sources */,
@@ -2084,6 +2091,7 @@
 				B00F23581F3832340014C91D /* UITextView+JKPinchZoom.m in Sources */,
 				B00F22D31F3832340014C91D /* NSObject+JKAppInfo.m in Sources */,
 				B00F22F71F3832340014C91D /* NSMutableURLRequest+JKUpload.m in Sources */,
+				B00F23E81F3854580014C91D /* UIView+DYUtils.m in Sources */,
 				B00F22DF1F3832340014C91D /* NSString+JKBase64.m in Sources */,
 				B00F22DC1F3832340014C91D /* NSObject+JKRuntime.m in Sources */,
 				B00F22F91F3832340014C91D /* NSURLSession+JKSynchronousTask.m in Sources */,
@@ -2108,7 +2116,7 @@
 				B00F22B51F3832340014C91D /* NSData+JKPCM.m in Sources */,
 				B00F22BE1F3832340014C91D /* NSDateFormatter+JKMake.m in Sources */,
 				B00F22ED1F3832340014C91D /* NSString+JKStringPages.m in Sources */,
-				B00F23CB1F3834190014C91D /* UIApplication+YYAdd.m in Sources */,
+				B00F23EB1F3855420014C91D /* UIApplication+DYUtils.m in Sources */,
 				B00F23531F3832340014C91D /* UITextField+JKHistory.m in Sources */,
 				B00F230D1F3832340014C91D /* UIBezierPath+JKSVGString.m in Sources */,
 				B00F23561F3832340014C91D /* UITextField+JKShake.m in Sources */,
