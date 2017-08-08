@@ -8,7 +8,7 @@
 
 #import "YGCodeScanner.h"
 #import <AVFoundation/AVFoundation.h>
-#import "YGSystemDefine.h"
+#import "DYSystemDefine.h"
 
 static  NSString * const codeScannerErrorDomain = @"code_scanner_error_domain";
 
