@@ -1,72 +1,84 @@
 //
-//  NSDate+YYAdd.m
-//  YYCategories <https://github.com/ibireme/YYCategories>
+//  NSDate+DYUtils.m
+//  DYFramework
 //
-//  Created by ibireme on 13/4/11.
-//  Copyright (c) 2015 ibireme.
-//
-//  This source code is licensed under the MIT-style license found in the
-//  LICENSE file in the root directory of this source tree.
+//  Created by 黄德玉 on 2017/8/8.
+//  Copyright © 2017年 Dorin Huang. All rights reserved.
 //
 
-#import "NSDate+YYAdd.h"
-#import "YYCategoriesMacro.h"
+#import "NSDate+DYUtils.h"
 #import <time.h>
 
-YYSYNTH_DUMMY_CLASS(NSDate_YYAdd)
+@implementation NSDate (DYUtils)
+
+@dynamic dy_day;
+@dynamic dy_hour;
+@dynamic dy_year;
+@dynamic dy_month;
+@dynamic dy_minute;
+@dynamic dy_second;
+@dynamic dy_isToday;
+@dynamic dy_quarter;
+@dynamic dy_weekday;
+@dynamic dy_isLeapYear;
+@dynamic dy_nanosecond;
+@dynamic dy_weekOfYear;
+@dynamic dy_isLeapMonth;
+@dynamic dy_isYesterday;
+@dynamic dy_weekOfMonth;
+@dynamic dy_weekdayOrdinal;
+@dynamic dy_yearForWeekOfYear;
 
 
-@implementation NSDate (YYAdd)
-
-- (NSInteger)year {
+- (NSInteger)dy_year {
     return [[[NSCalendar currentCalendar] components:NSCalendarUnitYear fromDate:self] year];
 }
 
-- (NSInteger)month {
+- (NSInteger)dy_month {
     return [[[NSCalendar currentCalendar] components:NSCalendarUnitMonth fromDate:self] month];
 }
 
-- (NSInteger)day {
+- (NSInteger)dy_day {
     return [[[NSCalendar currentCalendar] components:NSCalendarUnitDay fromDate:self] day];
 }
 
-- (NSInteger)hour {
+- (NSInteger)dy_hour {
     return [[[NSCalendar currentCalendar] components:NSCalendarUnitHour fromDate:self] hour];
 }
 
-- (NSInteger)minute {
+- (NSInteger)dy_minute {
     return [[[NSCalendar currentCalendar] components:NSCalendarUnitMinute fromDate:self] minute];
 }
 
-- (NSInteger)second {
+- (NSInteger)dy_second {
     return [[[NSCalendar currentCalendar] components:NSCalendarUnitSecond fromDate:self] second];
 }
 
-- (NSInteger)nanosecond {
+- (NSInteger)dy_nanosecond {
     return [[[NSCalendar currentCalendar] components:NSCalendarUnitSecond fromDate:self] nanosecond];
 }
 
-- (NSInteger)weekday {
+- (NSInteger)dy_weekday {
     return [[[NSCalendar currentCalendar] components:NSCalendarUnitWeekday fromDate:self] weekday];
 }
 
-- (NSInteger)weekdayOrdinal {
+- (NSInteger)dy_weekdayOrdinal {
     return [[[NSCalendar currentCalendar] components:NSCalendarUnitWeekdayOrdinal fromDate:self] weekdayOrdinal];
 }
 
-- (NSInteger)weekOfMonth {
+- (NSInteger)dy_weekOfMonth {
     return [[[NSCalendar currentCalendar] components:NSCalendarUnitWeekOfMonth fromDate:self] weekOfMonth];
 }
 
-- (NSInteger)weekOfYear {
+- (NSInteger)dy_weekOfYear {
     return [[[NSCalendar currentCalendar] components:NSCalendarUnitWeekOfYear fromDate:self] weekOfYear];
 }
 
-- (NSInteger)yearForWeekOfYear {
+- (NSInteger)dy_yearForWeekOfYear {
     return [[[NSCalendar currentCalendar] components:NSCalendarUnitYearForWeekOfYear fromDate:self] yearForWeekOfYear];
 }
 
-- (NSInteger)quarter {
+- (NSInteger)dy_quarter {
     return [[[NSCalendar currentCalendar] components:NSCalendarUnitQuarter fromDate:self] quarter];
 }
 
@@ -74,74 +86,74 @@ YYSYNTH_DUMMY_CLASS(NSDate_YYAdd)
     return [[[NSCalendar currentCalendar] components:NSCalendarUnitQuarter fromDate:self] isLeapMonth];
 }
 
-- (BOOL)isLeapYear {
-    NSUInteger year = self.year;
+- (BOOL)dy_isLeapYear {
+    NSUInteger year = self.dy_year;
     return ((year % 400 == 0) || ((year % 100 != 0) && (year % 4 == 0)));
 }
 
-- (BOOL)isToday {
+- (BOOL)dy_isToday {
     if (fabs(self.timeIntervalSinceNow) >= 60 * 60 * 24) return NO;
-    return [NSDate new].day == self.day;
+    return [NSDate new].dy_day == self.dy_day;
 }
 
-- (BOOL)isYesterday {
-    NSDate *added = [self dateByAddingDays:1];
-    return [added isToday];
+- (BOOL)dy_isYesterday {
+    NSDate *added = [self dy_dateByAddingDays:1];
+    return [added dy_isToday];
 }
 
-- (NSDate *)dateByAddingYears:(NSInteger)years {
+- (NSDate *)dy_dateByAddingYears:(NSInteger)years {
     NSCalendar *calendar =  [NSCalendar currentCalendar];
     NSDateComponents *components = [[NSDateComponents alloc] init];
     [components setYear:years];
     return [calendar dateByAddingComponents:components toDate:self options:0];
 }
 
-- (NSDate *)dateByAddingMonths:(NSInteger)months {
+- (NSDate *)dy_dateByAddingMonths:(NSInteger)months {
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDateComponents *components = [[NSDateComponents alloc] init];
     [components setMonth:months];
     return [calendar dateByAddingComponents:components toDate:self options:0];
 }
 
-- (NSDate *)dateByAddingWeeks:(NSInteger)weeks {
+- (NSDate *)dy_dateByAddingWeeks:(NSInteger)weeks {
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDateComponents *components = [[NSDateComponents alloc] init];
     [components setWeekOfYear:weeks];
     return [calendar dateByAddingComponents:components toDate:self options:0];
 }
 
-- (NSDate *)dateByAddingDays:(NSInteger)days {
+- (NSDate *)dy_dateByAddingDays:(NSInteger)days {
     NSTimeInterval aTimeInterval = [self timeIntervalSinceReferenceDate] + 86400 * days;
     NSDate *newDate = [NSDate dateWithTimeIntervalSinceReferenceDate:aTimeInterval];
     return newDate;
 }
 
-- (NSDate *)dateByAddingHours:(NSInteger)hours {
+- (NSDate *)dy_dateByAddingHours:(NSInteger)hours {
     NSTimeInterval aTimeInterval = [self timeIntervalSinceReferenceDate] + 3600 * hours;
     NSDate *newDate = [NSDate dateWithTimeIntervalSinceReferenceDate:aTimeInterval];
     return newDate;
 }
 
-- (NSDate *)dateByAddingMinutes:(NSInteger)minutes {
+- (NSDate *)dy_dateByAddingMinutes:(NSInteger)minutes {
     NSTimeInterval aTimeInterval = [self timeIntervalSinceReferenceDate] + 60 * minutes;
     NSDate *newDate = [NSDate dateWithTimeIntervalSinceReferenceDate:aTimeInterval];
     return newDate;
 }
 
-- (NSDate *)dateByAddingSeconds:(NSInteger)seconds {
+- (NSDate *)dy_dateByAddingSeconds:(NSInteger)seconds {
     NSTimeInterval aTimeInterval = [self timeIntervalSinceReferenceDate] + seconds;
     NSDate *newDate = [NSDate dateWithTimeIntervalSinceReferenceDate:aTimeInterval];
     return newDate;
 }
 
-- (NSString *)stringWithFormat:(NSString *)format {
+- (NSString *)dy_stringWithFormat:(NSString *)format {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:format];
     [formatter setLocale:[NSLocale currentLocale]];
     return [formatter stringFromDate:self];
 }
 
-- (NSString *)stringWithFormat:(NSString *)format timeZone:(NSTimeZone *)timeZone locale:(NSLocale *)locale {
+- (NSString *)dy_stringWithFormat:(NSString *)format timeZone:(NSTimeZone *)timeZone locale:(NSLocale *)locale {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:format];
     if (timeZone) [formatter setTimeZone:timeZone];
@@ -149,7 +161,7 @@ YYSYNTH_DUMMY_CLASS(NSDate_YYAdd)
     return [formatter stringFromDate:self];
 }
 
-- (NSString *)stringWithISOFormat {
+- (NSString *)dy_stringWithISOFormat {
     static NSDateFormatter *formatter = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -160,13 +172,13 @@ YYSYNTH_DUMMY_CLASS(NSDate_YYAdd)
     return [formatter stringFromDate:self];
 }
 
-+ (NSDate *)dateWithString:(NSString *)dateString format:(NSString *)format {
++ (NSDate *)dy_dateWithString:(NSString *)dateString format:(NSString *)format {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:format];
     return [formatter dateFromString:dateString];
 }
 
-+ (NSDate *)dateWithString:(NSString *)dateString format:(NSString *)format timeZone:(NSTimeZone *)timeZone locale:(NSLocale *)locale {
++ (NSDate *)dy_dateWithString:(NSString *)dateString format:(NSString *)format timeZone:(NSTimeZone *)timeZone locale:(NSLocale *)locale {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:format];
     if (timeZone) [formatter setTimeZone:timeZone];
@@ -174,7 +186,7 @@ YYSYNTH_DUMMY_CLASS(NSDate_YYAdd)
     return [formatter dateFromString:dateString];
 }
 
-+ (NSDate *)dateWithISOFormatString:(NSString *)dateString {
++ (NSDate *)dy_dateWithISOFormatString:(NSString *)dateString {
     static NSDateFormatter *formatter = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{

@@ -1,113 +1,105 @@
 //
-//  NSString+YYAdd.m
-//  YYCategories <https://github.com/ibireme/YYCategories>
+//  NSString+DYUtils.m
+//  DYFramework
 //
-//  Created by ibireme on 13/4/3.
-//  Copyright (c) 2015 ibireme.
-//
-//  This source code is licensed under the MIT-style license found in the
-//  LICENSE file in the root directory of this source tree.
+//  Created by 黄德玉 on 2017/8/8.
+//  Copyright © 2017年 Dorin Huang. All rights reserved.
 //
 
-#import "NSString+YYAdd.h"
-#import "NSData+YYAdd.h"
-#import "UIDevice+YYAdd.h"
-#import "YYCategoriesMacro.h"
+#import "NSString+DYUtils.h"
+#import "NSData+DYUtils.h"
 
-YYSYNTH_DUMMY_CLASS(NSString_YYAdd)
+@implementation NSString (DYUtils)
 
-
-@implementation NSString (YYAdd)
-
-- (NSString *)md2String {
-    return [[self dataUsingEncoding:NSUTF8StringEncoding] md2String];
+- (NSString *)dy_md2String {
+    return [[self dataUsingEncoding:NSUTF8StringEncoding] dy_md2String];
 }
 
-- (NSString *)md4String {
-    return [[self dataUsingEncoding:NSUTF8StringEncoding] md4String];
+- (NSString *)dy_md4String {
+    return [[self dataUsingEncoding:NSUTF8StringEncoding] dy_md4String];
 }
 
-- (NSString *)md5String {
-    return [[self dataUsingEncoding:NSUTF8StringEncoding] md5String];
+- (NSString *)dy_md5String {
+    return [[self dataUsingEncoding:NSUTF8StringEncoding] dy_md5String];
 }
 
-- (NSString *)sha1String {
-    return [[self dataUsingEncoding:NSUTF8StringEncoding] sha1String];
+- (NSString *)dy_sha1String {
+    return [[self dataUsingEncoding:NSUTF8StringEncoding] dy_sha1String];
 }
 
-- (NSString *)sha224String {
-    return [[self dataUsingEncoding:NSUTF8StringEncoding] sha224String];
+- (NSString *)dy_sha224String {
+    return [[self dataUsingEncoding:NSUTF8StringEncoding] dy_sha224String];
 }
 
-- (NSString *)sha256String {
-    return [[self dataUsingEncoding:NSUTF8StringEncoding] sha256String];
+- (NSString *)dy_sha256String {
+    return [[self dataUsingEncoding:NSUTF8StringEncoding] dy_sha256String];
 }
 
-- (NSString *)sha384String {
-    return [[self dataUsingEncoding:NSUTF8StringEncoding] sha384String];
+- (NSString *)dy_sha384String {
+    return [[self dataUsingEncoding:NSUTF8StringEncoding] dy_sha384String];
 }
 
-- (NSString *)sha512String {
-    return [[self dataUsingEncoding:NSUTF8StringEncoding] sha512String];
+- (NSString *)dy_sha512String {
+    return [[self dataUsingEncoding:NSUTF8StringEncoding] dy_sha512String];
 }
 
-- (NSString *)crc32String {
-    return [[self dataUsingEncoding:NSUTF8StringEncoding] crc32String];
+- (NSString *)dy_crc32String {
+    return [[self dataUsingEncoding:NSUTF8StringEncoding] dy_crc32String];
 }
 
-- (NSString *)hmacMD5StringWithKey:(NSString *)key {
+- (NSString *)dy_hmacMD5StringWithKey:(NSString *)key {
     return [[self dataUsingEncoding:NSUTF8StringEncoding]
-            hmacMD5StringWithKey:key];
+            dy_hmacMD5StringWithKey:key];
 }
 
-- (NSString *)hmacSHA1StringWithKey:(NSString *)key {
+- (NSString *)dy_hmacSHA1StringWithKey:(NSString *)key {
     return [[self dataUsingEncoding:NSUTF8StringEncoding]
-            hmacSHA1StringWithKey:key];
+            dy_hmacSHA1StringWithKey:key];
 }
 
-- (NSString *)hmacSHA224StringWithKey:(NSString *)key {
+- (NSString *)dy_hmacSHA224StringWithKey:(NSString *)key {
     return [[self dataUsingEncoding:NSUTF8StringEncoding]
-            hmacSHA224StringWithKey:key];
+            dy_hmacSHA224StringWithKey:key];
 }
 
-- (NSString *)hmacSHA256StringWithKey:(NSString *)key {
+- (NSString *)dy_hmacSHA256StringWithKey:(NSString *)key {
     return [[self dataUsingEncoding:NSUTF8StringEncoding]
-            hmacSHA256StringWithKey:key];
+            dy_hmacSHA256StringWithKey:key];
 }
 
-- (NSString *)hmacSHA384StringWithKey:(NSString *)key {
+- (NSString *)dy_hmacSHA384StringWithKey:(NSString *)key {
     return [[self dataUsingEncoding:NSUTF8StringEncoding]
-            hmacSHA384StringWithKey:key];
+            dy_hmacSHA384StringWithKey:key];
 }
 
-- (NSString *)hmacSHA512StringWithKey:(NSString *)key {
+- (NSString *)dy_hmacSHA512StringWithKey:(NSString *)key {
     return [[self dataUsingEncoding:NSUTF8StringEncoding]
-            hmacSHA512StringWithKey:key];
+            dy_hmacSHA512StringWithKey:key];
 }
 
-- (NSString *)base64EncodedString {
-    return [[self dataUsingEncoding:NSUTF8StringEncoding] base64EncodedString];
+- (NSString *)dy_base64EncodedString {
+    return [[self dataUsingEncoding:NSUTF8StringEncoding] dy_base64EncodedString];
 }
 
-+ (NSString *)stringWithBase64EncodedString:(NSString *)base64EncodedString {
-    NSData *data = [NSData dataWithBase64EncodedString:base64EncodedString];
++ (NSString *)dy_stringWithBase64EncodedString:(NSString *)base64EncodedString {
+    NSData *data = [NSData dy_dataWithBase64EncodedString:base64EncodedString];
     return [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
 }
 
-- (NSString *)stringByURLEncode {
+- (NSString *)dy_stringByURLEncode {
     if ([self respondsToSelector:@selector(stringByAddingPercentEncodingWithAllowedCharacters:)]) {
         /**
          AFNetworking/AFURLRequestSerialization.m
          
          Returns a percent-escaped string following RFC 3986 for a query string key or value.
          RFC 3986 states that the following characters are "reserved" characters.
-            - General Delimiters: ":", "#", "[", "]", "@", "?", "/"
-            - Sub-Delimiters: "!", "$", "&", "'", "(", ")", "*", "+", ",", ";", "="
+         - General Delimiters: ":", "#", "[", "]", "@", "?", "/"
+         - Sub-Delimiters: "!", "$", "&", "'", "(", ")", "*", "+", ",", ";", "="
          In RFC 3986 - Section 3.4, it states that the "?" and "/" characters should not be escaped to allow
          query strings to include a URL. Therefore, all "reserved" characters with the exception of "?" and "/"
          should be percent-escaped in the query string.
-            - parameter string: The string to be percent-escaped.
-            - returns: The percent-escaped string.
+         - parameter string: The string to be percent-escaped.
+         - returns: The percent-escaped string.
          */
         static NSString * const kAFCharactersGeneralDelimitersToEncode = @":#[]@"; // does not include "?" or "/" due to RFC 3986 - Section 3.4
         static NSString * const kAFCharactersSubDelimitersToEncode = @"!$&'()*+,;=";
@@ -147,7 +139,7 @@ YYSYNTH_DUMMY_CLASS(NSString_YYAdd)
     }
 }
 
-- (NSString *)stringByURLDecode {
+- (NSString *)dy_stringByURLDecode {
     if ([self respondsToSelector:@selector(stringByRemovingPercentEncoding)]) {
         return [self stringByRemovingPercentEncoding];
     } else {
@@ -167,7 +159,7 @@ YYSYNTH_DUMMY_CLASS(NSString_YYAdd)
     }
 }
 
-- (NSString *)stringByEscapingHTML {
+- (NSString *)dy_stringByEscapingHTML {
     NSUInteger len = self.length;
     if (!len) return self;
     
@@ -197,7 +189,7 @@ YYSYNTH_DUMMY_CLASS(NSString_YYAdd)
     return result;
 }
 
-- (CGSize)sizeForFont:(UIFont *)font size:(CGSize)size mode:(NSLineBreakMode)lineBreakMode {
+- (CGSize)dy_sizeForFont:(UIFont *)font size:(CGSize)size mode:(NSLineBreakMode)lineBreakMode {
     CGSize result;
     if (!font) font = [UIFont systemFontOfSize:12];
     if ([self respondsToSelector:@selector(boundingRectWithSize:options:attributes:context:)]) {
@@ -221,23 +213,23 @@ YYSYNTH_DUMMY_CLASS(NSString_YYAdd)
     return result;
 }
 
-- (CGFloat)widthForFont:(UIFont *)font {
-    CGSize size = [self sizeForFont:font size:CGSizeMake(HUGE, HUGE) mode:NSLineBreakByWordWrapping];
+- (CGFloat)dy_widthForFont:(UIFont *)font {
+    CGSize size = [self dy_sizeForFont:font size:CGSizeMake(HUGE, HUGE) mode:NSLineBreakByWordWrapping];
     return size.width;
 }
 
-- (CGFloat)heightForFont:(UIFont *)font width:(CGFloat)width {
-    CGSize size = [self sizeForFont:font size:CGSizeMake(width, HUGE) mode:NSLineBreakByWordWrapping];
+- (CGFloat)dy_heightForFont:(UIFont *)font width:(CGFloat)width {
+    CGSize size = [self dy_sizeForFont:font size:CGSizeMake(width, HUGE) mode:NSLineBreakByWordWrapping];
     return size.height;
 }
 
-- (BOOL)matchesRegex:(NSString *)regex options:(NSRegularExpressionOptions)options {
+- (BOOL)dy_matchesRegex:(NSString *)regex options:(NSRegularExpressionOptions)options {
     NSRegularExpression *pattern = [NSRegularExpression regularExpressionWithPattern:regex options:options error:NULL];
     if (!pattern) return NO;
     return ([pattern numberOfMatchesInString:self options:0 range:NSMakeRange(0, self.length)] > 0);
 }
 
-- (void)enumerateRegexMatches:(NSString *)regex
+- (void)dy_enumerateRegexMatches:(NSString *)regex
                       options:(NSRegularExpressionOptions)options
                    usingBlock:(void (^)(NSString *match, NSRange matchRange, BOOL *stop))block {
     if (regex.length == 0 || !block) return;
@@ -248,7 +240,7 @@ YYSYNTH_DUMMY_CLASS(NSString_YYAdd)
     }];
 }
 
-- (NSString *)stringByReplacingRegex:(NSString *)regex
+- (NSString *)dy_stringByReplacingRegex:(NSString *)regex
                              options:(NSRegularExpressionOptions)options
                           withString:(NSString *)replacement; {
     NSRegularExpression *pattern = [NSRegularExpression regularExpressionWithPattern:regex options:options error:nil];
@@ -256,62 +248,26 @@ YYSYNTH_DUMMY_CLASS(NSString_YYAdd)
     return [pattern stringByReplacingMatchesInString:self options:0 range:NSMakeRange(0, [self length]) withTemplate:replacement];
 }
 
-- (char)charValue {
-    return self.numberValue.charValue;
-}
 
-- (unsigned char) unsignedCharValue {
-    return self.numberValue.unsignedCharValue;
-}
-
-- (short) shortValue {
-    return self.numberValue.shortValue;
-}
-
-- (unsigned short) unsignedShortValue {
-    return self.numberValue.unsignedShortValue;
-}
-
-- (unsigned int) unsignedIntValue {
-    return self.numberValue.unsignedIntValue;
-}
-
-- (long) longValue {
-    return self.numberValue.longValue;
-}
-
-- (unsigned long) unsignedLongValue {
-    return self.numberValue.unsignedLongValue;
-}
-
-- (unsigned long long) unsignedLongLongValue {
-    return self.numberValue.unsignedLongLongValue;
-}
-
-- (NSUInteger) unsignedIntegerValue {
-    return self.numberValue.unsignedIntegerValue;
-}
-
-
-+ (NSString *)stringWithUUID {
++ (NSString *)dy_stringWithUUID {
     CFUUIDRef uuid = CFUUIDCreate(NULL);
     CFStringRef string = CFUUIDCreateString(NULL, uuid);
     CFRelease(uuid);
     return (__bridge_transfer NSString *)string;
 }
 
-+ (NSString *)stringWithUTF32Char:(UTF32Char)char32 {
++ (NSString *)dy_stringWithUTF32Char:(UTF32Char)char32 {
     char32 = NSSwapHostIntToLittle(char32);
     return [[NSString alloc] initWithBytes:&char32 length:4 encoding:NSUTF32LittleEndianStringEncoding];
 }
 
-+ (NSString *)stringWithUTF32Chars:(const UTF32Char *)char32 length:(NSUInteger)length {
++ (NSString *)dy_stringWithUTF32Chars:(const UTF32Char *)char32 length:(NSUInteger)length {
     return [[NSString alloc] initWithBytes:(const void *)char32
                                     length:length * 4
                                   encoding:NSUTF32LittleEndianStringEncoding];
 }
 
-- (void)enumerateUTF32CharInRange:(NSRange)range usingBlock:(void (^)(UTF32Char char32, NSRange range, BOOL *stop))block {
+- (void)dy_enumerateUTF32CharInRange:(NSRange)range usingBlock:(void (^)(UTF32Char char32, NSRange range, BOOL *stop))block {
     NSString *str = self;
     if (range.location != 0 || range.length != self.length) {
         str = [self substringWithRange:range];
@@ -334,17 +290,17 @@ YYSYNTH_DUMMY_CLASS(NSString_YYAdd)
     }
 }
 
-- (NSString *)stringByTrim {
+- (NSString *)dy_stringByTrim {
     NSCharacterSet *set = [NSCharacterSet whitespaceAndNewlineCharacterSet];
     return [self stringByTrimmingCharactersInSet:set];
 }
 
-- (NSString *)stringByAppendingNameScale:(CGFloat)scale {
+- (NSString *)dy_stringByAppendingNameScale:(CGFloat)scale {
     if (fabs(scale - 1) <= __FLT_EPSILON__ || self.length == 0 || [self hasSuffix:@"/"]) return self.copy;
     return [self stringByAppendingFormat:@"@%@x", @(scale)];
 }
 
-- (NSString *)stringByAppendingPathScale:(CGFloat)scale {
+- (NSString *)dy_stringByAppendingPathScale:(CGFloat)scale {
     if (fabs(scale - 1) <= __FLT_EPSILON__ || self.length == 0 || [self hasSuffix:@"/"]) return self.copy;
     NSString *ext = self.pathExtension;
     NSRange extRange = NSMakeRange(self.length - ext.length, 0);
@@ -353,17 +309,17 @@ YYSYNTH_DUMMY_CLASS(NSString_YYAdd)
     return [self stringByReplacingCharactersInRange:extRange withString:scaleStr];
 }
 
-- (CGFloat)pathScale {
+- (CGFloat)dy_pathScale {
     if (self.length == 0 || [self hasSuffix:@"/"]) return 1;
     NSString *name = self.stringByDeletingPathExtension;
     __block CGFloat scale = 1;
-    [name enumerateRegexMatches:@"@[0-9]+\\.?[0-9]*x$" options:NSRegularExpressionAnchorsMatchLines usingBlock: ^(NSString *match, NSRange matchRange, BOOL *stop) {
+    [name dy_enumerateRegexMatches:@"@[0-9]+\\.?[0-9]*x$" options:NSRegularExpressionAnchorsMatchLines usingBlock: ^(NSString *match, NSRange matchRange, BOOL *stop) {
         scale = [match substringWithRange:NSMakeRange(1, match.length - 2)].doubleValue;
     }];
     return scale;
 }
 
-- (BOOL)isNotBlank {
+- (BOOL)dy_isNotBlank {
     NSCharacterSet *blank = [NSCharacterSet whitespaceAndNewlineCharacterSet];
     for (NSInteger i = 0; i < self.length; ++i) {
         unichar c = [self characterAtIndex:i];
@@ -374,33 +330,30 @@ YYSYNTH_DUMMY_CLASS(NSString_YYAdd)
     return NO;
 }
 
-- (BOOL)containsString:(NSString *)string {
+- (BOOL)dy_containsString:(NSString *)string {
     if (string == nil) return NO;
     return [self rangeOfString:string].location != NSNotFound;
 }
 
-- (BOOL)containsCharacterSet:(NSCharacterSet *)set {
+- (BOOL)dy_containsCharacterSet:(NSCharacterSet *)set {
     if (set == nil) return NO;
     return [self rangeOfCharacterFromSet:set].location != NSNotFound;
 }
 
-//- (NSNumber *)numberValue {
-//    return [NSNumber numberWithString:self];
-//}
 
-- (NSData *)dataValue {
+- (NSData *)dy_dataValue {
     return [self dataUsingEncoding:NSUTF8StringEncoding];
 }
 
-- (NSRange)rangeOfAll {
+- (NSRange)dy_rangeOfAll {
     return NSMakeRange(0, self.length);
 }
 
-- (id)jsonValueDecoded {
-    return [[self dataValue] jsonValueDecoded];
+- (id)dy_jsonValueDecoded {
+    return [[self dy_dataValue] dy_jsonValueDecoded];
 }
 
-+ (NSString *)stringNamed:(NSString *)name {
++ (NSString *)dy_stringNamed:(NSString *)name {
     NSString *path = [[NSBundle mainBundle] pathForResource:name ofType:@""];
     NSString *str = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:NULL];
     if (!str) {
@@ -409,5 +362,6 @@ YYSYNTH_DUMMY_CLASS(NSString_YYAdd)
     }
     return str;
 }
+
 
 @end
