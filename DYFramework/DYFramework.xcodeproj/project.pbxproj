@@ -12,11 +12,9 @@
 		B00F22AB1F3832340014C91D /* CLLocation+JKCH1903.m in Sources */ = {isa = PBXBuildFile; fileRef = B00F20C51F3832340014C91D /* CLLocation+JKCH1903.m */; };
 		B00F22CA1F3832340014C91D /* NSInvocation+JKBb.m in Sources */ = {isa = PBXBuildFile; fileRef = B00F21101F3832340014C91D /* NSInvocation+JKBb.m */; };
 		B00F22CB1F3832340014C91D /* NSInvocation+JKBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = B00F21121F3832340014C91D /* NSInvocation+JKBlock.m */; };
-		B00F22DF1F3832340014C91D /* NSString+JKBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = B00F21401F3832340014C91D /* NSString+JKBase64.m */; };
 		B00F22E01F3832340014C91D /* NSString+JKContains.m in Sources */ = {isa = PBXBuildFile; fileRef = B00F21421F3832340014C91D /* NSString+JKContains.m */; };
 		B00F22E11F3832340014C91D /* NSString+JKDictionaryValue.m in Sources */ = {isa = PBXBuildFile; fileRef = B00F21441F3832340014C91D /* NSString+JKDictionaryValue.m */; };
 		B00F22E21F3832340014C91D /* NSString+JKEmoji.m in Sources */ = {isa = PBXBuildFile; fileRef = B00F21461F3832340014C91D /* NSString+JKEmoji.m */; };
-		B00F22E31F3832340014C91D /* NSString+JKEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = B00F21481F3832340014C91D /* NSString+JKEncrypt.m */; };
 		B00F22E41F3832340014C91D /* NSString+JKHash.m in Sources */ = {isa = PBXBuildFile; fileRef = B00F214A1F3832340014C91D /* NSString+JKHash.m */; };
 		B00F22E51F3832340014C91D /* NSString+JKHTML.m in Sources */ = {isa = PBXBuildFile; fileRef = B00F214C1F3832340014C91D /* NSString+JKHTML.m */; };
 		B00F22E61F3832340014C91D /* NSString+JKMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = B00F214E1F3832340014C91D /* NSString+JKMatcher.m */; };
@@ -35,7 +33,6 @@
 		B00F22F31F3832340014C91D /* NSTimer+JKBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = B00F21691F3832340014C91D /* NSTimer+JKBlocks.m */; };
 		B00F22F41F3832340014C91D /* NSURL+JKParam.m in Sources */ = {isa = PBXBuildFile; fileRef = B00F216C1F3832340014C91D /* NSURL+JKParam.m */; };
 		B00F22F51F3832340014C91D /* NSURL+JKQueryDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = B00F216E1F3832340014C91D /* NSURL+JKQueryDictionary.m */; };
-		B00F22F61F3832340014C91D /* NSURLConnection+JKSelfSigned.m in Sources */ = {isa = PBXBuildFile; fileRef = B00F21711F3832340014C91D /* NSURLConnection+JKSelfSigned.m */; };
 		B00F22F71F3832340014C91D /* NSMutableURLRequest+JKUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = B00F21741F3832340014C91D /* NSMutableURLRequest+JKUpload.m */; };
 		B00F22F81F3832340014C91D /* NSURLRequest+JKParamsFromDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = B00F21761F3832340014C91D /* NSURLRequest+JKParamsFromDictionary.m */; };
 		B00F22F91F3832340014C91D /* NSURLSession+JKSynchronousTask.m in Sources */ = {isa = PBXBuildFile; fileRef = B00F21791F3832340014C91D /* NSURLSession+JKSynchronousTask.m */; };
@@ -237,16 +234,12 @@
 		B00F21101F3832340014C91D /* NSInvocation+JKBb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+JKBb.m"; sourceTree = "<group>"; };
 		B00F21111F3832340014C91D /* NSInvocation+JKBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSInvocation+JKBlock.h"; sourceTree = "<group>"; };
 		B00F21121F3832340014C91D /* NSInvocation+JKBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+JKBlock.m"; sourceTree = "<group>"; };
-		B00F213F1F3832340014C91D /* NSString+JKBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JKBase64.h"; sourceTree = "<group>"; };
-		B00F21401F3832340014C91D /* NSString+JKBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JKBase64.m"; sourceTree = "<group>"; };
 		B00F21411F3832340014C91D /* NSString+JKContains.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JKContains.h"; sourceTree = "<group>"; };
 		B00F21421F3832340014C91D /* NSString+JKContains.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JKContains.m"; sourceTree = "<group>"; };
 		B00F21431F3832340014C91D /* NSString+JKDictionaryValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JKDictionaryValue.h"; sourceTree = "<group>"; };
 		B00F21441F3832340014C91D /* NSString+JKDictionaryValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JKDictionaryValue.m"; sourceTree = "<group>"; };
 		B00F21451F3832340014C91D /* NSString+JKEmoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JKEmoji.h"; sourceTree = "<group>"; };
 		B00F21461F3832340014C91D /* NSString+JKEmoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JKEmoji.m"; sourceTree = "<group>"; };
-		B00F21471F3832340014C91D /* NSString+JKEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JKEncrypt.h"; sourceTree = "<group>"; };
-		B00F21481F3832340014C91D /* NSString+JKEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JKEncrypt.m"; sourceTree = "<group>"; };
 		B00F21491F3832340014C91D /* NSString+JKHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JKHash.h"; sourceTree = "<group>"; };
 		B00F214A1F3832340014C91D /* NSString+JKHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JKHash.m"; sourceTree = "<group>"; };
 		B00F214B1F3832340014C91D /* NSString+JKHTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JKHTML.h"; sourceTree = "<group>"; };
@@ -283,8 +276,6 @@
 		B00F216C1F3832340014C91D /* NSURL+JKParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+JKParam.m"; sourceTree = "<group>"; };
 		B00F216D1F3832340014C91D /* NSURL+JKQueryDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+JKQueryDictionary.h"; sourceTree = "<group>"; };
 		B00F216E1F3832340014C91D /* NSURL+JKQueryDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+JKQueryDictionary.m"; sourceTree = "<group>"; };
-		B00F21701F3832340014C91D /* NSURLConnection+JKSelfSigned.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLConnection+JKSelfSigned.h"; sourceTree = "<group>"; };
-		B00F21711F3832340014C91D /* NSURLConnection+JKSelfSigned.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLConnection+JKSelfSigned.m"; sourceTree = "<group>"; };
 		B00F21731F3832340014C91D /* NSMutableURLRequest+JKUpload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableURLRequest+JKUpload.h"; sourceTree = "<group>"; };
 		B00F21741F3832340014C91D /* NSMutableURLRequest+JKUpload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableURLRequest+JKUpload.m"; sourceTree = "<group>"; };
 		B00F21751F3832340014C91D /* NSURLRequest+JKParamsFromDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+JKParamsFromDictionary.h"; sourceTree = "<group>"; };
@@ -676,7 +667,6 @@
 				B00F213E1F3832340014C91D /* NSString */,
 				B00F21651F3832340014C91D /* NSTimer */,
 				B00F216A1F3832340014C91D /* NSURL */,
-				B00F216F1F3832340014C91D /* NSURLConnection */,
 				B00F21721F3832340014C91D /* NSURLRequest */,
 				B00F21771F3832340014C91D /* NSURLSession */,
 				B00F217A1F3832340014C91D /* NSUserDefaults */,
@@ -698,16 +688,12 @@
 		B00F213E1F3832340014C91D /* NSString */ = {
 			isa = PBXGroup;
 			children = (
-				B00F213F1F3832340014C91D /* NSString+JKBase64.h */,
-				B00F21401F3832340014C91D /* NSString+JKBase64.m */,
 				B00F21411F3832340014C91D /* NSString+JKContains.h */,
 				B00F21421F3832340014C91D /* NSString+JKContains.m */,
 				B00F21431F3832340014C91D /* NSString+JKDictionaryValue.h */,
 				B00F21441F3832340014C91D /* NSString+JKDictionaryValue.m */,
 				B00F21451F3832340014C91D /* NSString+JKEmoji.h */,
 				B00F21461F3832340014C91D /* NSString+JKEmoji.m */,
-				B00F21471F3832340014C91D /* NSString+JKEncrypt.h */,
-				B00F21481F3832340014C91D /* NSString+JKEncrypt.m */,
 				B00F21491F3832340014C91D /* NSString+JKHash.h */,
 				B00F214A1F3832340014C91D /* NSString+JKHash.m */,
 				B00F214B1F3832340014C91D /* NSString+JKHTML.h */,
@@ -760,15 +746,6 @@
 				B00F216E1F3832340014C91D /* NSURL+JKQueryDictionary.m */,
 			);
 			path = NSURL;
-			sourceTree = "<group>";
-		};
-		B00F216F1F3832340014C91D /* NSURLConnection */ = {
-			isa = PBXGroup;
-			children = (
-				B00F21701F3832340014C91D /* NSURLConnection+JKSelfSigned.h */,
-				B00F21711F3832340014C91D /* NSURLConnection+JKSelfSigned.m */,
-			);
-			path = NSURLConnection;
 			sourceTree = "<group>";
 		};
 		B00F21721F3832340014C91D /* NSURLRequest */ = {
@@ -1662,7 +1639,6 @@
 				B00F23E51F38528E0014C91D /* UIView+DYFrame.m in Sources */,
 				B02DFDFB1EE91FFA00E040F4 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				B00F23211F3832340014C91D /* UIDevice+JKHardware.m in Sources */,
-				B00F22F61F3832340014C91D /* NSURLConnection+JKSelfSigned.m in Sources */,
 				B00F23441F3832340014C91D /* UINavigationItem+JKLoading.m in Sources */,
 				B02D00F51EE9367700E040F4 /* DYPhotoPicker.m in Sources */,
 				B00F232E1F3832340014C91D /* UIImage+JKGIF.m in Sources */,
@@ -1693,7 +1669,6 @@
 				B00F23221F3832340014C91D /* UIDevice+JKPasscodeStatus.m in Sources */,
 				B02DFDF31EE91FFA00E040F4 /* AFSecurityPolicy.m in Sources */,
 				B00F22F21F3832340014C91D /* NSTimer+JKAddition.m in Sources */,
-				B00F22E31F3832340014C91D /* NSString+JKEncrypt.m in Sources */,
 				B02D00F11EE9360500E040F4 /* YGCodeScanner.m in Sources */,
 				B00F22FF1F3832340014C91D /* CAAnimation+JKEasingEquations.m in Sources */,
 				B00F23201F3832340014C91D /* UIControl+JKSound.m in Sources */,
@@ -1711,7 +1686,6 @@
 				B00F23581F3832340014C91D /* UITextView+JKPinchZoom.m in Sources */,
 				B00F22F71F3832340014C91D /* NSMutableURLRequest+JKUpload.m in Sources */,
 				B00F23E81F3854580014C91D /* UIView+DYUtils.m in Sources */,
-				B00F22DF1F3832340014C91D /* NSString+JKBase64.m in Sources */,
 				B00F22F91F3832340014C91D /* NSURLSession+JKSynchronousTask.m in Sources */,
 				B00F23131F3832340014C91D /* UIButton+JKCountDown.m in Sources */,
 				B00F235B1F3832340014C91D /* UIView+JKAnimation.m in Sources */,

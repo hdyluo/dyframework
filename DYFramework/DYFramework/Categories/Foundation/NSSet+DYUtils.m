@@ -69,7 +69,7 @@
 }
 
 - (id)dy_reduce:(id(^)(id accumulator, id object))block {
-    return [self jk_reduce:nil withBlock:block];
+    return [self dy_reduce:nil withBlock:block];
 }
 
 - (id)dy_reduce:(id)initial withBlock:(id(^)(id accumulator, id object))block {

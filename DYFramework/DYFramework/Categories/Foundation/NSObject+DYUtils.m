@@ -183,7 +183,7 @@
         if (!superClass) {
             return NO;
         }else{
-            return  [NSObject jk_isNSObjectClass:superClass];
+            return  [NSObject dy_isNSObjectClass:superClass];
         }
     }
 }
